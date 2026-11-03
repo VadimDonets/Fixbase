@@ -1,0 +1,17 @@
+:root {
+            --primary: #7c4dff;
+            --primary-hover: #6937e8;
+            --accent: #a78bfa;
+            --dark: #0f1226;
+            --dark-light: #1d2140;
+            --background: #f5f6ff;
+            --surface: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --border: #e5e7f5;
+        }
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+}
