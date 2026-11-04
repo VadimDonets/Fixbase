@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f1226">
+  <meta name="description" content="FixBase – device troubleshooting guides and common solutions.">
+  <title>Devices | FixBase</title>
+  <link rel="stylesheet" href="styles/devices.css">
+</head>
+<body data-page="devices">
+
+<header class="header">
+  <div class="container navbar">
+    <a href="base.html" class="logo" aria-label="FixBase home">
+      Fix<span class="accent">Base</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="base.html">Home</a>
+      <a href="devices.html" class="active">Devices</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="community.html">Community</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="solutions.html" class="btn btn-outline">Explore Guides</a>
+      <a href="community.html" class="btn btn-primary">Share a Fix</a>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="base.html">Home</a>
+      Devices
+    </div>
+    <span class="eyebrow eyebrow-dark">DEVICE LIBRARY</span>
+    <h1>Choose your <em>device.</em></h1>
+    <p>Browse devices to find common problems, error codes and troubleshooting guides.</p>
+    <div class="page-search">
+      <label class="sr-only" for="device-search">Search devices</label>
+      <input id="device-search" type="search" placeholder="Search for a device…" autocomplete="off">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">BROWSE CATEGORIES</span>
+        <h2>All device categories</h2>
+        <p>Start with the device you're using.</p>
+      </div>
+      <span id="device-count" class="counter">8 categories</span>
+    </div>
+
+    <div class="filter-row" aria-label="Filter device categories">
+      <button type="button" class="filter-chip active" data-device-filter="all">All devices</button>
+      <button type="button" class="filter-chip" data-device-filter="computer">Computers</button>
+      <button type="button" class="filter-chip" data-device-filter="mobile">Mobile</button>
+      <button type="button" class="filter-chip" data-device-filter="other">Other</button>
+    </div>
+
+<div class="device-grid device-library" id="device-grid">
+      <a class="device-card" data-category="computer" data-name="laptops battery, heat and performance" href="/">
+        <h3>Laptops</h3>
+        <p>Battery, heat and performance</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="computer" data-name="desktops start-up, hardware and software" href="/">
+        <h3>Desktops</h3>
+        <p>Start-up, hardware and software</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="mobile" data-name="phones charging, wi-fi and display" href="/">
+        <h3>Phones</h3>
+        <p>Charging, Wi-Fi and display</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="mobile" data-name="tablets touchscreen, apps and battery" href="/">
+        <h3>Tablets</h3>
+        <p>Touchscreen, apps and battery</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="other" data-name="tvs picture, sound and connection" href="/">
+        <h3>TVs</h3>
+        <p>Picture, sound and connection</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="other" data-name="printers paper, printing and wi-fi" href="/">
+        <h3>Printers</h3>
+        <p>Paper, printing and Wi-Fi</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="other" data-name="audio headphones and speakers" href="/">
+        <h3>Audio</h3>
+        <p>Headphones and speakers</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+      <a class="device-card" data-category="other" data-name="other discover more device types" href="/">
+        <h3>Other</h3>
+        <p>Discover more device types</p>
+        <span class="card-link">Explore guides</span>
+      </a>
+    </div>
+    <p class="empty-state" id="devices-empty" hidden>No matching devices. Try another search.</p>
+  </div>
+</section>
+
+<section class="section cta-area">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <h2>Can't find your device?</h2>
+        <p>Explore the full troubleshooting library.</p>
+      </div>
+      <a href="solutions.html" class="btn btn-light">View solutions</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="base.html" class="logo">
+        Fix<span class="accent">Base</span>
+      </a>
+      <p>Understand device problems. Find practical, safer troubleshooting guides.</p>
+      <span class="footer-chip">Built for curious problem-solvers</span>
+    </div>
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="base.html">Home</a>
+      <a href="devices.html">Devices</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="community.html">Community</a>
+    </div>
+    <div class="footer-links">
+      <h3>Good to know</h3>
+      <p>These are example guides. Stop if your device is damaged, swollen, unusually hot, or unsafe. Ask a qualified repair professional.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span><span id="year">2026</span> FixBase. All rights reserved.</span>
+</footer>
+
+
+</body>
+</html>
