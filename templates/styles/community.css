@@ -1,0 +1,160 @@
+.page-hero {
+    background: var(--dark);
+    color: white;
+    padding: 55px 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+    color: #c7c9dd;
+}
+
+.breadcrumbs a {
+    color: white;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.eyebrow-dark {
+    color: var(--accent);
+}
+
+.page-hero h1 {
+    margin-bottom: 12px;
+}
+
+.page-hero h1 em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.page-hero p {
+    max-width: 580px;
+    color: #c7c9dd;
+}
+
+.community-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 55px;
+    align-items: start;
+}
+
+.community-intro h2,
+.form-heading h2 {
+    margin-bottom: 12px;
+}
+
+.community-intro > p {
+    max-width: 520px;
+    color: var(--muted);
+}
+
+.community-benefits {
+    display: grid;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.community-benefits p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.community-benefits strong {
+    color: var(--text);
+}
+
+.community-form {
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px #2020500d;
+}
+
+.form-heading {
+    margin-bottom: 24px;
+}
+
+.form-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.field-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.optional,
+.required {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+}
+
+.field-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+    border-color: var(--primary);
+    outline: 2px solid #7c4dff22;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn-ghost {
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+.btn-ghost:hover {
+    background: var(--background);
+}
+
+.form-status {
+    min-height: 20px;
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+

@@ -1,48 +1,56 @@
 :root {
-            --primary: #7c4dff;
-            --primary-hover: #6937e8;
-            --accent: #a78bfa;
-            --dark: #0f1226;
-            --dark-light: #1d2140;
-            --background: #f5f6ff;
-            --surface: #ffffff;
-            --text: #1f2937;
-            --muted: #6b7280;
-            --border: #e5e7f5;
-        }
+    --primary: #7c4dff;
+    --primary-hover: #6937e8;
+    --accent: #a78bfa;
+    --dark: #0f1226;
+    --dark-light: #1d2140;
+    --background: #f5f6ff;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7f5;
+}
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
     font-family: 'Inter', sans-serif;
     background: var(--background);
     color: var(--text);
     line-height: 1.6;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-button, input{
+button,
+input,
+select,
+textarea {
     font: inherit;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: min(1200px, 92%);
 }
 
-.header{
+.header {
     background: var(--dark);
     color: white;
     border-bottom: 1px solid #292d4d;
 }
 
- .navbar {
+.navbar {
     min-height: 76px;
     display: flex;
     align-items: center;
@@ -50,7 +58,7 @@ button{
     gap: 24px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -59,30 +67,31 @@ button{
     letter-spacing: -1px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-.nav-links a{
+.nav-links a {
     color: #c7c9dd;
     font-size: 14px;
     font-weight: 500;
     transition: color 0.2s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover,
+.nav-links a.active {
     color: white;
 }
 
-.nav-actions{
+.nav-actions {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -94,40 +103,40 @@ button{
     border: 1px solid transparent;
 }
 
-.btn-primary{
+.btn-primary {
     background: var(--primary);
     color: white;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: var(--primary-hover);
 }
 
-.btn-outline{
+.btn-outline {
     color: white;
     border-color: #4d427c;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
     background: var(--dark-light);
 }
 
-main{
+main {
     min-height: 65vh;
 }
 
-.hero{
+.hero {
     background: radial-gradient(circle at 85% 30%, #44328a 0%, transparent 40%);
     background: linear-gradient(135deg, #171a37, #101328);
     color: white;
     padding: 90px 0;
 }
 
-.hero-content{
+.hero-content {
     max-width: 760px;
 }
 
-.hero-label{
+.hero-label {
     display: inline-block;
     padding: 7px 14px;
     border-radius: 30px;
@@ -139,7 +148,7 @@ main{
     margin-bottom: 22px;
 }
 
-.hero h1 span{
+.hero h1 span {
     color: var(--accent);
 }
 
@@ -160,7 +169,7 @@ main{
     box-shadow: 0 12px 35px #00000025;
 }
 
-.search-box input{
+.search-box input {
     width: 100%;
     border: none;
     outline: none;
@@ -169,7 +178,7 @@ main{
     min-width: 0;   
 }
 
-.search-box button{
+.search-box button {
     border: none;
     background: var(--primary);
     color: white;
@@ -178,7 +187,7 @@ main{
     font-weight: 600;
 }
 
-.search-box button:hover{
+.search-box button:hover {
     background: var(--primary-hover);
 }
 
@@ -219,11 +228,6 @@ main{
     box-shadow: 0 12px 30px #7c4dff18;
 }
 
-.device-icon {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
 .device-card h3 {
     font-size: 16px;
     font-weight: 700;
@@ -235,35 +239,35 @@ main{
     margin-top: 5px;
 }
 
-.footer{
+.footer {
     background: var(--dark);
     color: white;
     padding-top: 55px;
 }
 
-.footer-grid{
+.footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;
     gap: 50px;
     padding-bottom: 45px;
 }
 
-.footer h3{
+.footer h3 {
     margin-bottom: 16px;
     font-size: 16px;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     color: var(--accent);
 }
 
-.footer-bottom{
+.footer-bottom {
     border-top: 1px solid #292d4d;
     text-align: center;
     padding: 20px;

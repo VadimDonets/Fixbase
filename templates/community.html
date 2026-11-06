@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | FixBase</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/community.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="base.html" class="logo" aria-label="FixBase home">
+                <span class="accent">FixBase</span>
+            </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="base.html">Home</a>
+                <a href="devices.html">Devices</a>
+                <a href="/">Solutions</a>
+                <a href="community.html" class="active">Community</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="/" class="btn btn-outline">Explore Guides</a>
+                <a href="community.html" class="btn btn-primary">Share a Fix</a>
+            </div>
+        </div>
+    </header>
+<main id="main-content">
+
+<section class="page-hero">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="base.html">Home</a>
+            <span>›</span>
+            Community
+        </div>
+        <span class="eyebrow eyebrow-dark">COMMUNITY</span>
+        <h1>Share what <em>worked.</em></h1>
+        <p>Have a useful tip? Tell others what helped you fix a device.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container community-layout">
+        <div class="community-intro">
+            <span class="eyebrow">SHARE A TIP</span>
+            <h2>Help someone with the same problem.</h2>
+            <p>
+                Describe the device, what went wrong and which safe steps helped.
+                The form only saves a draft in your browser.
+            </p>
+
+            <div class="community-benefits">
+                <div>
+                    <p>
+                        <strong>Keep it clear</strong><br>
+                        Explain the symptoms and what you tried.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <strong>Keep it safe</strong><br>
+                        Do not suggest dangerous repairs.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <strong>Include details</strong><br>
+                        Add the device type and anything useful.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form id="community-form" class="community-form">
+            <div class="form-heading">
+                <h2>Suggest a solution</h2>
+                <p>Your draft stays on this device.</p>
+            </div>
+
+            <div class="field-group">
+                <label for="name">Your name <span class="optional">(optional)</span></label>
+                <input id="name" name="name" placeholder="e.g. Alex" maxlength="60">
+            </div>
+
+            <div class="field-group">
+                <label for="device-type">Device type <span class="required">*</span></label>
+                <select id="device-type" name="device" required>
+                    <option value="">Choose a device</option>
+                    <option>Laptop</option>
+                    <option>Desktop</option>
+                    <option>Phone</option>
+                    <option>Tablet</option>
+                    <option>TV</option>
+                    <option>Printer</option>
+                    <option>Audio</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="field-group">
+                <label for="problem">Problem title <span class="required">*</span></label>
+                <input id="problem" name="problem" placeholder="e.g. Laptop Wi-Fi keeps disconnecting" maxlength="100" required>
+            </div>
+
+            <div class="field-group">
+                <label for="description">What happened? <span class="required">*</span></label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe the issue and symptoms…" required></textarea>
+            </div>
+
+            <div class="field-group">
+                <label for="solution">What helped? <span class="required">*</span></label>
+                <textarea id="solution" name="solution" rows="5" placeholder="Explain the safe steps you tried…" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Save draft</button>
+                <button class="btn btn-ghost" type="button" id="clear-draft">Clear form</button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="base.html" class="logo">Fix<span class="accent">Base</span></a>
+      <p>Understand device problems. Find practical, safer troubleshooting guides.</p>
+      <span class="footer-chip">Built for curious problem-solvers</span>
+    </div>
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="base.html">Home</a><a href="devices.html">Devices</a>
+      <a href="solutions.html">Solutions</a><a href="community.html">Community</a>
+    </div>
+    <div class="footer-links">
+      <h3>Good to know</h3>
+      <p>These are example guides. Stop if your device is damaged, swollen, unusually hot, or unsafe. Ask a qualified repair professional.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year">2026</span> FixBase. All rights reserved.</span><span>HTML · CSS · JavaScript</span></div>
+</footer>
+</body>
+</html>

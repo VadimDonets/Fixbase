@@ -141,15 +141,3 @@
     background: white;
     color: var(--dark);
 }
-
-@media (max-width: 700px) {
-    .section-heading,
-    .cta-box {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .device-grid {
-        grid-template-columns: 1fr;
-    }
-}
